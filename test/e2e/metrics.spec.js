@@ -52,6 +52,9 @@ describe('Segment metrics', function () {
 
         assert.ok(segmentSpy.called, 'Segment should receive metrics')
 
+        for (let callNum = 0; callNum < segmentSpy.callCount; callNum += 1) {
+          console.log(JSON.stringify(segmentSpy.getCall(callNum).args))
+        }
         assert.equal(
           segmentSpy.lastCall.args[0].event,
           'Cancel Tx Via Notification Close',
