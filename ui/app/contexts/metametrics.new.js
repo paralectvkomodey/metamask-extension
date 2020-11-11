@@ -3,33 +3,17 @@
  * MetaMetrics is our own brand, and should remain aptly named regardless of the underlying
  * metrics system. This file implements Segment analytics tracking.
  */
-import React, {
-  useRef,
-  Component,
-  createContext,
-  useEffect,
-  useMemo,
-} from 'react'
-import { useSelector } from 'react-redux'
+import React, { Component, createContext, useEffect, useCallback } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
-import { useLocation, matchPath, useRouteMatch } from 'react-router-dom'
-import { captureException, captureMessage } from '@sentry/browser'
-
-import { omit } from 'lodash'
+import { useLocation, useRouteMatch } from 'react-router-dom'
+import { captureException } from '@sentry/browser'
 
 import { getEnvironmentType } from '../../../app/scripts/lib/util'
 import { PATH_NAME_MAP } from '../helpers/constants/routes'
-import { getCurrentLocale } from '../ducks/metamask/metamask'
-import {
-  getCurrentChainId,
-  getMetricsNetworkIdentifier,
-  txDataSelector,
-} from '../selectors'
-import {
-  getTrackMetaMetricsEvent,
-  METAMETRICS_ANONYMOUS_ID,
-  segment,
-} from '../../../shared/modules/metametrics'
+import { txDataSelector } from '../selectors'
+
+import { trackEvent, trackPage } from '../store/actions'
 
 export const MetaMetricsContext = createContext(() => {
   captureException(
@@ -71,48 +55,29 @@ function useSegmentContext() {
 }
 
 export function MetaMetricsProvider({ children }) {
-  const metaMetricsId = useSelector((state) => state.metamask.metaMetricsId)
-  const participateInMetaMetrics = useSelector(
-    (state) => state.metamask.participateInMetaMetrics,
-  )
+  const dispatch = useDispatch()
   const metaMetricsSendCount = useSelector(
     (state) => state.metamask.metaMetricsSendCount,
   )
-  const locale = useSelector(getCurrentLocale)
   const location = useLocation()
   const context = useSegmentContext()
-  const network = useSelector(getMetricsNetworkIdentifier)
-  const chainId = useSelector(getCurrentChainId)
 
-  /**
-   * track a metametrics event
-   *
-   * @param {import('../../../shared/modules/metametrics').MetaMetricsEventPayload} payload - payload for event
-   * @returns undefined
-   */
-  const trackEvent = useMemo(() => {
-    return getTrackMetaMetricsEvent(global.platform.getVersion(), () => ({
-      context,
-      locale: locale.replace('_', '-'),
-      environmentType: getEnvironmentType(),
-      chainId,
-      network,
-      participateInMetaMetrics,
-      metaMetricsId,
-      metaMetricsSendCount,
-    }))
-  }, [
-    network,
-    participateInMetaMetrics,
-    locale,
-    metaMetricsId,
-    metaMetricsSendCount,
-    chainId,
-    context,
-  ])
-
-  // Used to prevent double tracking page calls
-  const previousMatch = useRef()
+  const trackMetaMetricsEvent = useCallback(
+    (payload, options) => {
+      trackEvent(
+        {
+          ...payload,
+          environmentType: getEnvironmentType(),
+          ...context,
+        },
+        {
+          ...options,
+          metaMetricsSendCount,
+        },
+      )
+    },
+    [context, metaMetricsSendCount],
+  )
 
   /**
    * Anytime the location changes, track a page change with segment.
@@ -122,72 +87,13 @@ export function MetaMetricsProvider({ children }) {
    */
   useEffect(() => {
     const environmentType = getEnvironmentType()
-    if (
-      (participateInMetaMetrics === null &&
-        location.pathname.startsWith('/initialize')) ||
-      participateInMetaMetrics
-    ) {
-      // Events that happen during initialization before the user opts into MetaMetrics will be anonymous
-      const idTrait = metaMetricsId ? 'userId' : 'anonymousId'
-      const idValue = metaMetricsId ?? METAMETRICS_ANONYMOUS_ID
-      const match = matchPath(location.pathname, {
-        path: PATHS_TO_CHECK,
-        exact: true,
-        strict: true,
-      })
-      // Start by checking for a missing match route. If this falls through to the else if, then we know we
-      // have a matched route for tracking.
-      if (!match) {
-        // We have more specific pages for each type of transaction confirmation
-        // The user lands on /confirm-transaction first, then is redirected based on
-        // the contents of state.
-        if (location.pathname !== '/confirm-transaction') {
-          // Otherwise we are legitimately missing a matching route
-          captureMessage(`Segment page tracking found unmatched route`, {
-            previousMatch,
-            currentPath: location.pathname,
-          })
-        }
-      } else if (
-        previousMatch.current !== match.path &&
-        !(
-          environmentType === 'notification' &&
-          match.path === '/' &&
-          previousMatch.current === undefined
-        )
-      ) {
-        // When a notification window is open by a Dapp we do not want to track the initial home route load that can
-        // sometimes happen. To handle this we keep track of the previousMatch, and we skip the event track in the event
-        // that we are dealing with the initial load of the homepage
-        const { path, params } = match
-        const name = PATH_NAME_MAP[path]
-        segment.page({
-          [idTrait]: idValue,
-          name,
-          properties: {
-            // We do not want to send addresses or accounts in any events
-            // Some routes include these as params.
-            params: omit(params, ['account', 'address']),
-            locale: locale.replace('_', '-'),
-            network,
-            environment_type: environmentType,
-          },
-          context,
-        })
-      }
-      previousMatch.current = match?.path
-    }
-  }, [
-    location,
-    locale,
-    context,
-    network,
-    metaMetricsId,
-    participateInMetaMetrics,
-  ])
+    dispatch(
+      trackPage(location, environmentType, context.page, context.referrer),
+    )
+  }, [location, dispatch, context])
 
   return (
-    <MetaMetricsContext.Provider value={trackEvent}>
+    <MetaMetricsContext.Provider value={trackMetaMetricsEvent}>
       {children}
     </MetaMetricsContext.Provider>
   )

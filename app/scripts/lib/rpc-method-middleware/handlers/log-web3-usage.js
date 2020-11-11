@@ -43,18 +43,20 @@ function logWeb3UsageHandler(req, res, _next, end, { origin, sendMetrics }) {
   if (!recordedWeb3Usage[origin][path]) {
     recordedWeb3Usage[origin][path] = true
 
-    sendMetrics({
-      matomo: true,
-      event: `Website Used window.web3`,
-      category: 'inpage_provider',
-      properties: { action, web3Path: path },
-      eventContext: {
+    sendMetrics(
+      {
+        event: `Website Used window.web3`,
+        category: 'inpage_provider',
+        properties: { action, web3Path: path },
         referrer: {
           url: origin,
         },
       },
-      excludeMetaMetricsId: true,
-    })
+      {
+        matomo: true,
+        excludeMetaMetricsId: true,
+      },
+    )
   }
 
   res.result = true
