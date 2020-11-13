@@ -173,9 +173,6 @@
   "chainId": {
     "message": "ID verige"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Grafikon na voljo le v glavnih omrežjih."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Za uporabo strojne denarnice potrebujete Google Chrome."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "Hiter"
   },
-  "faster": {
-    "message": "Hitrejši"
-  },
   "fiat": {
     "message": "Klasične",
     "description": "Exchange type"
@@ -578,9 +572,6 @@
   },
   "links": {
     "message": "Povezave"
-  },
-  "liveGasPricePredictions": {
-    "message": "Napovedi o gas price"
   },
   "loadMore": {
     "message": "Naloži več"
@@ -1008,9 +999,6 @@
   },
   "slow": {
     "message": "Počasen"
-  },
-  "slower": {
-    "message": "Počasnejši"
   },
   "somethingWentWrong": {
     "message": "Oops! Nekaj je šlo narobe."

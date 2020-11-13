@@ -170,9 +170,6 @@
   "chainId": {
     "message": "Αναγνωριστικό Αλυσίδας"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Το διάγραμμα είναι διαθέσιμο μόνο σε δίκτυα Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Θα πρέπει να χρησιμοποιήσετε το MetaMask στο Google Chrome για να συνδεθείτε στο Πορτοφόλι Υλικού."
   },
@@ -404,9 +401,6 @@
   "fast": {
     "message": "Γρήγορα"
   },
-  "faster": {
-    "message": "Πιο γρήγορα"
-  },
   "fiat": {
     "message": "Εντολή",
     "description": "Exchange type"
@@ -584,9 +578,6 @@
   },
   "links": {
     "message": "Σύνδεσμοι"
-  },
-  "liveGasPricePredictions": {
-    "message": "Ζωντανές Προβλέψεις Τιμής Καυσίμου"
   },
   "loadMore": {
     "message": "Φόρτωση Περισσότερων"
@@ -1023,9 +1014,6 @@
   },
   "slow": {
     "message": "Αργά"
-  },
-  "slower": {
-    "message": "Πιο αργά"
   },
   "somethingWentWrong": {
     "message": "Ουπς! Κάτι πήγε στραβά."

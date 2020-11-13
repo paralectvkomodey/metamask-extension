@@ -173,9 +173,6 @@
   "chainId": {
     "message": "ID Rantai"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Grafik hanya tersedia pada jaringan Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Anda harus menggunakan MetaMask di Google Chrome untuk menyambung ke dompet Perangkat Keras Anda."
   },
@@ -401,9 +398,6 @@
   "fast": {
     "message": "Cepat"
   },
-  "faster": {
-    "message": "Lebih Cepat"
-  },
   "fileImportFail": {
     "message": "Impor berkas tidak tersedia? Klik di sini!",
     "description": "Helps user import their account from a JSON file"
@@ -577,9 +571,6 @@
   },
   "links": {
     "message": "Tautan"
-  },
-  "liveGasPricePredictions": {
-    "message": "Prediksi Harga Gas Langsung"
   },
   "loadMore": {
     "message": "Muat Lainnya"
@@ -1010,9 +1001,6 @@
   },
   "slow": {
     "message": "Lambat"
-  },
-  "slower": {
-    "message": "Lebih Lambat"
   },
   "somethingWentWrong": {
     "message": "Ups! Terjadi sesuatu."

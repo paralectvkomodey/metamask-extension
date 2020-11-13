@@ -170,9 +170,6 @@
   "cancelled": {
     "message": "Otkazano"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Grafikon dostupan jedino na mrežama Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Da biste se povezali sa Vašim hardverskim novčanikom morate da koristite MetaMask na Google Chrome-u."
   },
@@ -404,9 +401,6 @@
   "fast": {
     "message": "Брзо"
   },
-  "faster": {
-    "message": "Brže"
-  },
   "fiat": {
     "message": "Dekret",
     "description": "Exchange type"
@@ -584,9 +578,6 @@
   },
   "links": {
     "message": "Veze"
-  },
-  "liveGasPricePredictions": {
-    "message": "Predviđanja cene gasa uživo"
   },
   "loadMore": {
     "message": "Učitati više"
@@ -1017,9 +1008,6 @@
   },
   "slow": {
     "message": "Споро"
-  },
-  "slower": {
-    "message": "Sporije"
   },
   "somethingWentWrong": {
     "message": "Ups! Nešto nije u redu."

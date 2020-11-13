@@ -170,9 +170,6 @@
   "chainId": {
     "message": "ID de cadena"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Chart está disponible únicamente en las redes de Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Debes utilizar MetaMask en Google Chrome para poder conectarte a tu billetera de hardware."
   },
@@ -404,9 +401,6 @@
   "fast": {
     "message": "Rápido"
   },
-  "faster": {
-    "message": "Más rápido"
-  },
   "fiat": {
     "message": "Dinero fiduciario",
     "description": "Exchange type"
@@ -578,9 +572,6 @@
   },
   "links": {
     "message": "Enlaces"
-  },
-  "liveGasPricePredictions": {
-    "message": "Predicciones del precio del gas en vivo"
   },
   "loadMore": {
     "message": "Cargar más"
@@ -1011,9 +1002,6 @@
   },
   "slow": {
     "message": "Lento"
-  },
-  "slower": {
-    "message": "Más lento"
   },
   "somethingWentWrong": {
     "message": "¡Vaya! Se produjo un error."

@@ -167,9 +167,6 @@
   "chainId": {
     "message": "ID da Cadeia"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Tabela disponível apenas em redes de Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Você precisa usar o MetaMask no Google Chrome para se conectar à sua Carteira de Hardware."
   },
@@ -401,9 +398,6 @@
   "fast": {
     "message": "Rápido"
   },
-  "faster": {
-    "message": "Mais rápido"
-  },
   "fiat": {
     "message": "Ordem",
     "description": "Exchange type"
@@ -578,9 +572,6 @@
   },
   "likeToAddTokens": {
     "message": "Deseja adicionar esses tokens?"
-  },
-  "liveGasPricePredictions": {
-    "message": "Previsões de Preços de Gás Ao Vivo"
   },
   "loadMore": {
     "message": "Carregar Mais"
@@ -1014,9 +1005,6 @@
   },
   "slow": {
     "message": "Lento"
-  },
-  "slower": {
-    "message": "Mais lento"
   },
   "somethingWentWrong": {
     "message": "Opa! Algo deu errado."

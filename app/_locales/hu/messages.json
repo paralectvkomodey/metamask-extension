@@ -173,9 +173,6 @@
   "chainId": {
     "message": "Lánc azonosítója"
   },
-  "chartOnlyAvailableEth": {
-    "message": "A diagram csak Ethereum hálózatokon érhető el"
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "A MetaMask-ot Google Chrome-mal kell használnia a Hardveres pénztárcához való csatlakozáshoz."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "Gyors"
   },
-  "faster": {
-    "message": "Gyorsabban"
-  },
   "fileImportFail": {
     "message": "Nem működik a fájl importálása? Kattintson ide!",
     "description": "Helps user import their account from a JSON file"
@@ -583,9 +577,6 @@
   },
   "links": {
     "message": "Linkek"
-  },
-  "liveGasPricePredictions": {
-    "message": "Élő előrejelzések gázárak alakulására"
   },
   "loadMore": {
     "message": "Továbbiak betöltése"
@@ -1019,9 +1010,6 @@
   },
   "slow": {
     "message": "Lassú"
-  },
-  "slower": {
-    "message": "Lassabban"
   },
   "somethingWentWrong": {
     "message": "Hoppá! Valami hiba történt..."

@@ -199,9 +199,6 @@
   "fast": {
     "message": "เร็ว"
   },
-  "faster": {
-    "message": "เร็วขึ้น"
-  },
   "fiat": {
     "message": "เงินตรา",
     "description": "Exchange type"
@@ -485,9 +482,6 @@
   },
   "signed": {
     "message": "ลงชื่อแล้ว"
-  },
-  "slower": {
-    "message": "ช้าลง"
   },
   "stateLogs": {
     "message": "บันทึกของสถานะ"

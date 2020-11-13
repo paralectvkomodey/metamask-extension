@@ -235,9 +235,6 @@
   "chainId": {
     "message": "Blockchain ID"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Grafico disponibile solo per le reti Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Devi usare MetaMask con Google Chrome per connettere il tuo Portafoglio Hardware"
   },
@@ -639,9 +636,6 @@
   "fast": {
     "message": "Veloce"
   },
-  "faster": {
-    "message": "Più veloce"
-  },
   "feeAssociatedRequest": {
     "message": "Una tassa è associata a questa richiesta."
   },
@@ -859,9 +853,6 @@
   },
   "links": {
     "message": "Collegamenti"
-  },
-  "liveGasPricePredictions": {
-    "message": "Previsione del prezzo del gas in tempo reale"
   },
   "loadMore": {
     "message": "Carica di più"
@@ -1391,9 +1382,6 @@
   "showSeedPhrase": {
     "message": "Mostra frase seed"
   },
-  "showTransactionTimeDescription": {
-    "message": "Seleziona per mostrare nella scheda attività una stima dei tempi di transazione per le transazioni in corso sulla rete Ethereum principale. Nota: la stima è approssimativa basata sulle condizioni della rete."
-  },
   "sigRequest": {
     "message": "Firma Richiesta"
   },
@@ -1414,9 +1402,6 @@
   },
   "slow": {
     "message": "Lenta"
-  },
-  "slower": {
-    "message": "Più lenta"
   },
   "somethingWentWrong": {
     "message": "Oops! Qualcosa è andato storto."

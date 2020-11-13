@@ -173,9 +173,6 @@
   "chainId": {
     "message": "ID мережі"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Таблиця доступна тільки в мережах Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Щоб підключитися до апаратного гаманця, розширення MetaMask потрібно використовувати в Google Chrome."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "Швидка"
   },
-  "faster": {
-    "message": "Швидше"
-  },
   "fiat": {
     "message": "Вказівка",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "Посилання"
-  },
-  "liveGasPricePredictions": {
-    "message": "Прогнози ціни на пальне наживо"
   },
   "loadMore": {
     "message": "Завантажити більше"
@@ -1026,9 +1017,6 @@
   },
   "slow": {
     "message": "Повільна"
-  },
-  "slower": {
-    "message": "Повільніше"
   },
   "somethingWentWrong": {
     "message": "Ой! Щось пішло не так."

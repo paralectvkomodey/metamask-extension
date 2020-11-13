@@ -173,9 +173,6 @@
   "chainId": {
     "message": "Ketjun tunnus"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Kaavio saatavilla vain Ethereum-verkoissa."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Sinun tarvitsee käyttää MetaMaskia Google Chromessa voidaksesi yhdistää laitteistokukkaroosi."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "Nopea"
   },
-  "faster": {
-    "message": "Nopeammin"
-  },
   "fiat": {
     "message": "Kiinteä",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "Linkit"
-  },
-  "liveGasPricePredictions": {
-    "message": "Polttoaineen hintojen live-ennusteet"
   },
   "loadMore": {
     "message": "Lataa lisää"
@@ -1023,9 +1014,6 @@
   },
   "slow": {
     "message": "Hidas"
-  },
-  "slower": {
-    "message": "Hitaammin"
   },
   "somethingWentWrong": {
     "message": "Hupsis! Jotakin meni pieleen."

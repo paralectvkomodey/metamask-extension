@@ -173,9 +173,6 @@
   "chainId": {
     "message": "Grandinės ID"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Diagramos yra tik „Ethereum“ tinkluose."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Norėdami prisijungti prie aparatinės įrangos slaptažodinės, „MetaMask“ naudokitės „Google Chrome“ naršyklėje."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "Greitas"
   },
-  "faster": {
-    "message": "Greičiau"
-  },
   "fiat": {
     "message": "Standartinė valiuta",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "Nuorodos"
-  },
-  "liveGasPricePredictions": {
-    "message": "Tiesioginiai dujų kainos spėjimai"
   },
   "loadMore": {
     "message": "Įkelti daugiau"
@@ -1026,9 +1017,6 @@
   },
   "slow": {
     "message": "Lėtas"
-  },
-  "slower": {
-    "message": "Lėčiau"
   },
   "somethingWentWrong": {
     "message": "Vaje! Kažkas negerai."

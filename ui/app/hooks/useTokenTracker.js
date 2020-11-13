@@ -15,6 +15,7 @@ export function useTokenTracker(tokens) {
   const memoizedTokens = useEqualityCheck(tokens)
 
   const updateBalances = useCallback((tokenWithBalances) => {
+    console.log('tokenWithBalances', tokenWithBalances)
     setTokensWithBalances(tokenWithBalances)
     setLoading(false)
     setError(null)

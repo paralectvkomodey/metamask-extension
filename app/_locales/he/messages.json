@@ -173,9 +173,6 @@
   "chainId": {
     "message": "מזהה שרשרת"
   },
-  "chartOnlyAvailableEth": {
-    "message": "טבלה זמינה רק ברשתות אתריום."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "עליך להשתמש ב-MetaMask בגוגל כרום כדי להתחבר לארנק החומרה שלך."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "מהיר"
   },
-  "faster": {
-    "message": "מהר יותר"
-  },
   "fiat": {
     "message": "פיאט",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "קישורים"
-  },
-  "liveGasPricePredictions": {
-    "message": "תחזיות מחירי גז בשידור חי"
   },
   "loadMore": {
     "message": "טען עוד"
@@ -1020,9 +1011,6 @@
   },
   "slow": {
     "message": "אטי"
-  },
-  "slower": {
-    "message": "לאט יותר"
   },
   "somethingWentWrong": {
     "message": "אופס! משהו השתבש."

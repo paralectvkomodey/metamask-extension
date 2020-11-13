@@ -167,9 +167,6 @@
   "chainId": {
     "message": "Utambulisho wa Mnyororo"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Zogoa inapatikana kwenye mitandao ya Ethereum pekee."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Unapaswa kutumia MetaMask kwenye Google Chrome ili kuungnisha kwenye Waleti yako ya Programu Maunzi."
   },
@@ -401,9 +398,6 @@
   "fast": {
     "message": "Haraka"
   },
-  "faster": {
-    "message": "Ingiza"
-  },
   "fileImportFail": {
     "message": "Kuhamisha faili hakufanyi kazi? Bofya hapa!",
     "description": "Helps user import their account from a JSON file"
@@ -574,9 +568,6 @@
   },
   "links": {
     "message": "Viungo"
-  },
-  "liveGasPricePredictions": {
-    "message": "Utabiri wa moja kwa moja wa Bei ya Gesi"
   },
   "loadMore": {
     "message": "Pak zAIDI"
@@ -1004,9 +995,6 @@
   },
   "slow": {
     "message": "Polepole"
-  },
-  "slower": {
-    "message": "Taratibu"
   },
   "somethingWentWrong": {
     "message": "Ayaa! Hitilafu fulani imetokea."

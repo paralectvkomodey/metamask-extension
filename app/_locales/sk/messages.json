@@ -167,9 +167,6 @@
   "chainId": {
     "message": "ID reťazca"
   },
-  "chartOnlyAvailableEth": {
-    "message": "Graf je k dispozícii iba v sieťach Ethereum."
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "Ak sa chcete pripojiť k svojej hardvérovej peňaženke, musíte v Google Chrome použiť MetaMask."
   },
@@ -401,9 +398,6 @@
   "fast": {
     "message": "Rýchle"
   },
-  "faster": {
-    "message": "Rýchlejšie"
-  },
   "fiat": {
     "message": "FIAT",
     "description": "Exchange type"
@@ -571,9 +565,6 @@
   },
   "links": {
     "message": "Odkazy"
-  },
-  "liveGasPricePredictions": {
-    "message": "Predpoveď cien GAS naživo"
   },
   "loadMore": {
     "message": "Načítať viac"
@@ -989,9 +980,6 @@
   },
   "slow": {
     "message": "Pomalé"
-  },
-  "slower": {
-    "message": "Pomalší"
   },
   "somethingWentWrong": {
     "message": "Och! Niečo zlyhalo."

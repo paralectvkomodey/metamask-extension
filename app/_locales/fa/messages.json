@@ -173,9 +173,6 @@
   "chainId": {
     "message": "آی دی زنجیره"
   },
-  "chartOnlyAvailableEth": {
-    "message": "تنها قابل دسترس را در شبکه های ایتریوم جدول بندی نمایید"
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "برای وصل شدن به کیف سخت افزار شما باید MetaMask را در گوگل کروم استفاده نمایید."
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "سریع"
   },
-  "faster": {
-    "message": "سریع تر"
-  },
   "fiat": {
     "message": "حکم قانونی",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "لینک ها"
-  },
-  "liveGasPricePredictions": {
-    "message": "پیش بینی های قیمت گاز"
   },
   "loadMore": {
     "message": "بارگیری بیشتر"
@@ -1026,9 +1017,6 @@
   },
   "slow": {
     "message": "آهسته"
-  },
-  "slower": {
-    "message": "آهسته تر"
   },
   "somethingWentWrong": {
     "message": "اوه! مشکلی پیش آمده."

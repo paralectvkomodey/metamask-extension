@@ -173,9 +173,6 @@
   "chainId": {
     "message": "የሰንሰለት መታወቂያ"
   },
-  "chartOnlyAvailableEth": {
-    "message": "ቻርት የሚገኘው በ Ethereum አውታረ መረቦች ላይ ብቻ ነው።"
-  },
   "chromeRequiredForHardwareWallets": {
     "message": "ከሃርድዌርዎ ቋት ጋር ለመገናኘት MetaMask በ Google Chrome ላይ መጠቀም አለብዎት።"
   },
@@ -407,9 +404,6 @@
   "fast": {
     "message": "ፈጣን"
   },
-  "faster": {
-    "message": "በፍጥነት"
-  },
   "fiat": {
     "message": "ፊያት",
     "description": "Exchange type"
@@ -587,9 +581,6 @@
   },
   "links": {
     "message": "ማስፈንጠሪያዎች"
-  },
-  "liveGasPricePredictions": {
-    "message": "ቀጥታ የነዳጅ ዋጋ ትንበያዎች"
   },
   "loadMore": {
     "message": "ተጨማሪ ጫን"
@@ -1023,9 +1014,6 @@
   },
   "slow": {
     "message": "ቀስ"
-  },
-  "slower": {
-    "message": "ዘገምተኛ"
   },
   "somethingWentWrong": {
     "message": "ኤጭ! የሆነ ችግር ተፈጥሯል።"
