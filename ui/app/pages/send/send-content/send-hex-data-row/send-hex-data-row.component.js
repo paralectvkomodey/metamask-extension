@@ -17,6 +17,9 @@ export default class SendHexDataRow extends Component {
     const { updateSendHexData, updateGas } = this.props
     const data = event.target.value.replace(/\n/gu, '') || null
     updateSendHexData(data)
+    // TODO gas should be valid, but data inserted here doesn't include the is_human string, so the estimated gas would be wrong
+    // and user will not be able to complete the transaction
+    // need to consider this postfix string - is_human=0|1 into the gas estimations
     updateGas({ data })
   }
 
